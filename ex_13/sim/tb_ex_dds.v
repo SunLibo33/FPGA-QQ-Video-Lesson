@@ -3,7 +3,7 @@ module tb_ex_dds ();
 
 reg tb_sclk;
 reg tb_rst_n;
-wire [7:0]tb_o_wave;
+wire [15:0]tb_o_wave;
 
 ex_dds ex_dds_instance(
 	   .sclk    (tb_sclk),

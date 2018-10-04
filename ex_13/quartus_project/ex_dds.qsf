@@ -53,3 +53,4 @@ set_global_assignment -name QIP_FILE ipcore_dir/sp_ram_256x8.qip
 set_global_assignment -name MIF_FILE ipcore_dir/sp_ram_256x8.mif
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name QIP_FILE ipcore_dir/mult_8x8_l0.qip
