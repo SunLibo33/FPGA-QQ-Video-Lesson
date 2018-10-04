@@ -1,0 +1,21 @@
+|mealy
+clk => k~reg0.CLK
+clk => Current_State~1.DATAIN
+rst_n => Next_State.S1.OUTPUTSELECT
+rst_n => Next_State.S2.OUTPUTSELECT
+rst_n => Next_State.S3.OUTPUTSELECT
+rst_n => Next_State.S4.OUTPUTSELECT
+rst_n => Next_State.S5.OUTPUTSELECT
+rst_n => Next_State.S6.OUTPUTSELECT
+rst_n => k~reg0.ACLR
+rst_n => Current_State~3.DATAIN
+A => always2.IN0
+A => Next_State.DATAB
+A => Selector2.IN1
+A => Next_State.DATAB
+A => Selector1.IN1
+A => Selector0.IN1
+A => Next_State.DATAB
+k <= k~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

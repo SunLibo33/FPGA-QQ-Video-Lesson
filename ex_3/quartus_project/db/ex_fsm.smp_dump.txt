@@ -1,0 +1,7 @@
+
+State Machine - |ex_fsm|state
+Name state~11 state~10 state~9 state~8 
+state.IDLE 0 0 0 0 
+state.START 0 0 1 1 
+state.STOP 0 1 0 1 
+state.CLEAR 1 0 0 1 

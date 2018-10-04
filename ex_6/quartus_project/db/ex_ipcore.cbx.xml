@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="ex_ipcore">
+		<CBX_INST_ENTRY INSTANCE_NAME="|ex_ipcore|pll1:pll1_inst|altpll:altpll_component" CBX_FILE_NAME="pll1_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ex_ipcore|rom_8x256:rom_8x256_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_3c91.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

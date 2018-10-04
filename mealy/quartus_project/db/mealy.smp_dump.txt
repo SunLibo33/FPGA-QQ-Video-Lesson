@@ -1,0 +1,9 @@
+
+State Machine - |mealy|Current_State
+Name Current_State.S6 Current_State.S5 Current_State.S4 Current_State.S3 Current_State.S2 Current_State.S1 
+Current_State.S1 0 0 0 0 0 0 
+Current_State.S2 0 0 0 0 1 1 
+Current_State.S3 0 0 0 1 0 1 
+Current_State.S4 0 0 1 0 0 1 
+Current_State.S5 0 1 0 0 0 1 
+Current_State.S6 1 0 0 0 0 1 

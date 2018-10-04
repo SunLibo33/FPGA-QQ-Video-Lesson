@@ -1,0 +1,38 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\SourceCode\FPGA\ex_4\sim
+T_opt
+Z1 V0md7j`LGSQ]9JJ9PP0^dS2
+Z2 04 15 4 work tb_ex_shift_reg fast 0
+Z3 =1-74d4355e1b46-5b66d4b8-73-c2c
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+Z5 n@_opt
+Z6 OE;O;6.5;42
+vex_shift_reg
+Z7 INb23]^G6Cc2Ja6nzF2l`f0
+Z8 V76S0e>0<M`:iG[bVXX60R3
+Z9 w1533465241
+Z10 8./../design/ex_shift_reg.v
+Z11 F./../design/ex_shift_reg.v
+L0 1
+Z12 OE;L;6.5;42
+r1
+31
+Z13 o-work work -L mtiAvm -L mtiOvm -L mtiUPF
+Z14 !s100 zA6HBeNYF_4Z7dQ^LhO063
+!s85 0
+vtb_ex_shift_reg
+Z15 I`IK1?>K9ZaOfiU7H5[<^S0
+Z16 VNj5D9CM:TWmDVf9zkX[c41
+Z17 w1533465774
+Z18 8./tb_ex_shift_reg.v
+Z19 F./tb_ex_shift_reg.v
+L0 2
+R12
+r1
+31
+R13
+Z20 !s100 R5jmQBN_TonGhQIBPB7Ti2
+!s85 0

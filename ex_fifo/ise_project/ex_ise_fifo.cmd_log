@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj ex_ise_fifo -o F:/SourceCode/FPGA/ex_fifo/ise_project/ex_ise_fifo.tfi -lib work F:/SourceCode/FPGA/ex_fifo/design//ex_ise_fifo.v -module ex_ise_fifo -template C:/Xilinx/14.6/ISE_DS/ISE//data/tfi.tft -deleteonerror 

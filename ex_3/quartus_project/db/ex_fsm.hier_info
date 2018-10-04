@@ -1,0 +1,26 @@
+|ex_fsm
+sclk => k2~reg0.CLK
+sclk => k1~reg0.CLK
+sclk => state~5.DATAIN
+rst_n => k1~reg0.ACLR
+rst_n => k2~reg0.ACLR
+rst_n => state~7.DATAIN
+A => state.OUTPUTSELECT
+A => state.OUTPUTSELECT
+A => state.OUTPUTSELECT
+A => state.OUTPUTSELECT
+A => state.OUTPUTSELECT
+A => state.OUTPUTSELECT
+A => always1.IN0
+A => always2.IN0
+A => state.OUTPUTSELECT
+A => state.OUTPUTSELECT
+A => state.OUTPUTSELECT
+A => state.OUTPUTSELECT
+A => always1.IN0
+A => state.OUTPUTSELECT
+A => state.OUTPUTSELECT
+k1 <= k1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+k2 <= k2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

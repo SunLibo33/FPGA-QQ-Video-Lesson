@@ -1,0 +1,42 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\SourceCode\FPGA\ex_spi\sim
+T_opt
+V^c2?cUPJQ:`=NXK2SnRP[0
+Z1 04 6 4 work TB_SPI fast 0
+Z2 =1-74d4355e1b46-5b8c027b-274-6ec
+Z3 o-quiet -auto_acc_if_foreign -work work +acc
+Z4 n@_opt
+Z5 OE;O;6.5;42
+vSPI
+Z6 IH3h[g_02zHH@fN>0P<9??0
+Z7 V5EU^>8VdC[:f3Y<Y:Fk`C3
+Z8 dF:\SourceCode\FPGA\Onet\sim
+Z9 w1535901988
+Z10 8./../design/SPI.v
+Z11 F./../design/SPI.v
+L0 2
+Z12 OE;L;6.5;42
+r1
+31
+Z13 o-L mtiAvm -L mtiOvm -L mtiUPF
+Z14 n@s@p@i
+Z15 !s100 gIO]<QMN]<=QFNbalJChJ3
+!s85 0
+vTB_SPI
+Z16 IXkRFH<JhF2W8Z0:<E@8B63
+Z17 VC>9Hl@T_m`CFaQT2Bez]a0
+R8
+Z18 w1535902327
+Z19 8./TB_SPI.v
+Z20 F./TB_SPI.v
+L0 3
+R12
+r1
+31
+R13
+Z21 n@t@b_@s@p@i
+Z22 !s100 <b;1cNoHfViIJo2><RJGl3
+!s85 0

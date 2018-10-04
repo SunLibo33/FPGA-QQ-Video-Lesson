@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Aug 05 08:17:44 2018
+Quartus II 64-Bit Version : 12.0 Build 178 05/31/2012 SJ Full Version
+Revision Name : ex_fsm
+Top-level Entity Name : ex_fsm
+Family : Cyclone IV E
+Device : EP4CE6E22C8
+Timing Models : Final
+Total logic elements : 443 / 6,272 ( 7 % )
+    Total combinational functions : 319 / 6,272 ( 5 % )
+    Dedicated logic registers : 335 / 6,272 ( 5 % )
+Total registers : 335
+Total pins : 5 / 92 ( 5 % )
+Total virtual pins : 0
+Total memory bits : 512 / 276,480 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

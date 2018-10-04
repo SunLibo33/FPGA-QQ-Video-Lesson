@@ -1,0 +1,15 @@
+F:/SourceCode/FPGA/ex_2/design/ex_case.v {1 {vlog -work work -vopt -nocovercells F:/SourceCode/FPGA/ex_2/design/ex_case.v
+Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+-- Compiling module ex_case
+
+Top level modules:
+	ex_case
+
+} {} {}} F:/SourceCode/FPGA/ex_2/sim/tb_ex_case.v {1 {vlog -work work -vopt -nocovercells F:/SourceCode/FPGA/ex_2/sim/tb_ex_case.v
+Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+-- Compiling module tb_ex_case
+
+Top level modules:
+	tb_ex_case
+
+} {} {}}

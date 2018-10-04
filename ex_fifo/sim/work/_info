@@ -1,0 +1,261 @@
+m255
+K4
+z2
+13
+cModel Technology
+dC:/modeltech64_10.2c/examples
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+T_opt
+!s110 1536673998
+VA<Dmg?F8@_j1^3hi^7GLz0
+04 14 4 work tb_ex_ise_fifo fast 0
+04 4 4 work glbl fast 0
+=1-74d4355e1b46-5b97c8ce-151-ef0
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+OL;O;10.2c;57
+vex_ise_fifo
+ImP8n8[jXOI@ARSgd9`;kO3
+Z0 V`JN@9S9cnhjKRR_L]QIcM3
+Z1 dF:/SourceCode/FPGA/ex_fifo/sim
+w1536673902
+8./../design/ex_ise_fifo.v
+F./../design/ex_ise_fifo.v
+L0 21
+Z2 OL;L;10.2c;57
+r1
+31
+Z3 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z4 !s110 1536673997
+!s90 -reportprogress|300|./../design/ex_ise_fifo.v|
+!s100 iFXGYmOPm>l==hE643Jg83
+!s108 1536673997.050000
+!s107 ./../design/ex_ise_fifo.v|
+!i10b 1
+!s85 0
+!i111 0
+vFIFO_GENERATOR_V9_3
+R4
+IX]55zb?QeblGJ8oI<MJJ?0
+Z5 V`JN@9S9cnhjKRR_L]QIcM3
+R1
+Z6 w1370732155
+Z7 8./ise_lib/FIFO_GENERATOR_V9_3.v
+Z8 F./ise_lib/FIFO_GENERATOR_V9_3.v
+L0 98
+R2
+r1
+31
+Z9 !s108 1536673997.561000
+Z10 !s107 ./ise_lib/glbl.v|./ise_lib/FIFO_GENERATOR_V9_3.v|
+Z11 !s90 -reportprogress|300|./ise_lib/FIFO_GENERATOR_V9_3.v|./ise_lib/glbl.v|
+R3
+n@f@i@f@o_@g@e@n@e@r@a@t@o@r_@v9_3
+!s100 8[^Q2j=1HO4jaNKGM9THh1
+!i10b 1
+!s85 0
+!i111 0
+vfifo_generator_v9_3_axic_reg_slice
+R4
+I7n94GR8a]<Mg[5;2jL=TZ0
+R5
+R1
+R6
+R7
+R8
+L0 6953
+R2
+r1
+31
+R9
+R10
+R11
+R3
+!s100 iZ>W=C98>iD[=3>Z2T9cW3
+!i10b 1
+!s85 0
+!i111 0
+vfifo_generator_v9_3_beh_ver_ll_afifo
+R4
+IVTcZM;JSjk^0D>eX?IXKJ0
+R5
+R1
+R6
+R7
+R8
+L0 5409
+R2
+r1
+31
+R9
+R10
+R11
+R3
+!s100 e6XXdWjJ@71XmDM1<gKSf2
+!i10b 1
+!s85 0
+!i111 0
+vfifo_generator_v9_3_bhv_ver_as
+R4
+ILg1:YkmeACz1I73G^8o393
+R5
+R1
+R6
+R7
+R8
+L0 3736
+R2
+r1
+31
+R9
+R10
+R11
+R3
+!s100 bY1^A909A[I4T4<ji<`KJ2
+!i10b 1
+!s85 0
+!i111 0
+vfifo_generator_v9_3_bhv_ver_preload0
+R4
+ISgKR43mlz<HNiToUk>3lz0
+R5
+R1
+R6
+R7
+R8
+L0 6452
+R2
+r1
+31
+R9
+R10
+R11
+R3
+!s100 2NgD]RN`@<hl8HngmPR8B3
+!i10b 1
+!s85 0
+!i111 0
+vfifo_generator_v9_3_bhv_ver_ss
+R4
+I3Ed5jI:>0T?mN6DKAzWk63
+R5
+R1
+R6
+R7
+R8
+L0 5535
+R2
+r1
+31
+R9
+R10
+R11
+R3
+!s100 K[KKJmaAQe5;YJHT_UQ5f3
+!i10b 1
+!s85 0
+!i111 0
+vFIFO_GENERATOR_V9_3_CONV_VER
+R4
+IVd[HJmcdB^^]fOC1>LEPf2
+R5
+R1
+R6
+R7
+R8
+L0 2378
+R2
+r1
+31
+R9
+R10
+R11
+R3
+n@f@i@f@o_@g@e@n@e@r@a@t@o@r_@v9_3_@c@o@n@v_@v@e@r
+!s100 kEgg?]9[KYNVhPTgCiVI=0
+!i10b 1
+!s85 0
+!i111 0
+vfifo_generator_v9_3_sync_stage
+R4
+IG>CRUm`^jCZ<[f6UHXc`V0
+R5
+R1
+R6
+R7
+R8
+L0 3715
+R2
+r1
+31
+R9
+R10
+R11
+R3
+!s100 gP?@Q4f[2U?ISBn6FQDlL2
+!i10b 1
+!s85 0
+!i111 0
+vglbl
+R4
+If6neJSJSCXU9ogZ=Mj7MO1
+R5
+R1
+w1370717315
+8./ise_lib/glbl.v
+F./ise_lib/glbl.v
+L0 5
+R2
+r1
+31
+R9
+R10
+R11
+R3
+!s100 V<`KW`8LXe32mQ2Gdj1MB2
+!i10b 1
+!s85 0
+!i111 0
+vsync_fifo_8x256
+R4
+I=VQD[NEj9HcoSikLOkoDS1
+R5
+R1
+w1536673536
+8./../ise_project/ipcore_dir/sync_fifo_8x256.v
+F./../ise_project/ipcore_dir/sync_fifo_8x256.v
+L0 39
+R2
+r1
+31
+R3
+!s100 `dnE254[gOJi8X]MnaR050
+!s90 -reportprogress|300|./../ise_project/ipcore_dir/sync_fifo_8x256.v|
+!s108 1536673997.254000
+!s107 ./../ise_project/ipcore_dir/sync_fifo_8x256.v|
+!i10b 1
+!s85 0
+!i111 0
+vtb_ex_ise_fifo
+I:KI[ed9ac69:2KB@M4i`Q0
+R5
+R1
+w1536673955
+8./tb_ex_ise_fifo.v
+F./tb_ex_ise_fifo.v
+L0 3
+R2
+r1
+31
+R3
+!s90 -reportprogress|300|./tb_ex_ise_fifo.v|
+!s110 1536673996
+!s100 ci9@a^SW]Sh@9YlKAfVmY0
+!s108 1536673996.811000
+!s107 ./tb_ex_ise_fifo.v|
+!i10b 1
+!s85 0
+!i111 0

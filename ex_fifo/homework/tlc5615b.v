@@ -1,0 +1,85 @@
+module tlc5615b(
+       input  wire      clk,  //50M
+       input  wire      rst_n,
+       output reg       sclk, //1M
+       output wire      cs,
+       output wire      din,
+       input  wire [9:0]datain
+);
+
+parameter D_N=50-1;
+reg [5:0] div_cnt;
+reg [3:0] shift_cnt;
+
+reg shift_en;
+reg shift_flag;
+reg shift_end;
+
+reg [9:0] shift_buf;
+
+
+always@(posedge clk or negedge rst_n)
+begin
+	if(rst_n==1'b0)
+	  div_cnt<=6'd0;
+	else if(div_cnt==D_N)
+	  div_cnt<=6'd0;
+	else
+	  div_cnt<=div_cnt+6'd1;  
+end
+
+always@(posedge clk or negedge rst_n)
+begin
+	if(rst_n==1'b0)
+	  shift_flag<=1'b0;
+	else if( (div_cnt==D_N)&&(shift_end==1'b0) )
+	  shift_flag<=1'b1;
+  else
+    shift_flag<=1'b0;  	 
+end
+
+always@(posedge clk or negedge rst_n)
+begin
+	if(rst_n==1'b0)
+	  shift_cnt<=4'b0000;
+	else if( shift_flag==1'b1 )
+	  shift_cnt<=shift_cnt+4'b0001;
+  else
+    shift_cnt<=shift_cnt;  	 
+end
+
+always@(posedge clk or negedge rst_n)
+begin
+	if(rst_n==1'b0)
+	  shift_en<=1'b0;
+	else if( (shift_cnt==4'b1001 ) &&(shift_flag==1'b1) )
+	  shift_en<=1'b0;
+  else if(shift_cnt==4'b0000 )
+    shift_en<=1'b1;  	 
+end
+
+always@(posedge clk or negedge rst_n)
+begin
+	if(rst_n==1'b0)
+	  shift_buf<=10'd0;
+  else if( (shift_flag==1'b1) && (shift_en==1'b1) )
+    shift_buf<={shift_buf[8:0],1'b0}; 	  
+	else if( (shift_cnt==4'b0000 ) &&(shift_en==1'b1) )
+	  shift_buf<=datain;
+end
+
+assign din = shift_buf[9];
+assign cs  = ~shift_en;
+
+always@(posedge clk or negedge rst_n)
+begin
+	if(rst_n==1'b0)
+	  sclk<=1'b1;
+  else if( (shift_en==1'b1) && (div_cnt==6'd2))
+   	sclk<=1'b0; 
+  else if( (shift_en==1'b1) && (div_cnt==6'd27))
+    sclk<=1'b1;
+  
+end
+
+endmodule

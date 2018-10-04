@@ -1,0 +1,15 @@
+F:/SourceCode/FPGA/design/ex_cnt.v {1 {vlog -work work -vopt -nocovercells F:/SourceCode/FPGA/design/ex_cnt.v
+Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+-- Compiling module ex_cnt
+
+Top level modules:
+	ex_cnt
+
+} {} {}} F:/SourceCode/FPGA/sim/tb_ex_cnt.v {1 {vlog -work work -vopt -nocovercells F:/SourceCode/FPGA/sim/tb_ex_cnt.v
+Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+-- Compiling module tb_ex_cnt
+
+Top level modules:
+	tb_ex_cnt
+
+} {} {}}

@@ -1,0 +1,35 @@
+m255
+K3
+13
+cModel Technology
+dF:\SourceCode\FPGA\sim
+vex_case
+Vm20gUn^I:m[6zAKZ;;L;21
+r1
+!s85 0
+31
+IUXffJHeGWXfE^Y^]<Lb=R3
+Z0 dF:\SourceCode\FPGA\ex_2\sim
+w1533362194
+8F:/SourceCode/FPGA/ex_2/design/ex_case.v
+FF:/SourceCode/FPGA/ex_2/design/ex_case.v
+L0 1
+Z1 OE;L;6.5;42
+Z2 !s102 -nocovercells
+Z3 o-work work -nocovercells -L mtiAvm -L mtiOvm -L mtiUPF
+!s100 Ilz=LN:Z@a>nWdA0jcF@Q3
+vtb_ex_case
+VzF0Q>Wl[YmlEg[3RCk39f2
+r1
+31
+Id0;_KF7iKh^Y;B<KC]Jb;3
+Z4 dF:\SourceCode\FPGA\ex_2\sim
+w1533365419
+8F:/SourceCode/FPGA/ex_2/sim/tb_ex_case.v
+FF:/SourceCode/FPGA/ex_2/sim/tb_ex_case.v
+L0 3
+R1
+R2
+R3
+!s85 0
+!s100 2>eMTM7<Oo4D3Smmf^Ri72

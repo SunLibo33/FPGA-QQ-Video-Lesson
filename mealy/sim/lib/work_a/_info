@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\SourceCode\FPGA\mealy\sim
+T_opt
+V7]8^M0OkR;O6:=[gLhc7R1
+04 8 4 work tb_mealy fast 0
+=1-74d4355e1b46-5b6e88dd-1da-10e4
+o-quiet -auto_acc_if_foreign -work base_space -L altera_lib -L base_space -L design -sdfmax tb_mealy/tb_mealy_instance=mealy_v.sdo -suppress 1948 +acc
+n@_opt
+OE;O;6.5;42
+vtb_mealy
+!s100 MlbZ`Zg;7YQTlT87@]Cc82
+IEzgWEFM_a<1=>G_b??UX72
+VAY>dkHmhN59Pf>;gFJ7@A1
+w1533965622
+8./tb_mealy.v
+F./tb_mealy.v
+L0 2
+OE;L;6.5;42
+r1
+!s85 0
+31
+o-work base_space -L mtiAvm -L mtiOvm -L mtiUPF

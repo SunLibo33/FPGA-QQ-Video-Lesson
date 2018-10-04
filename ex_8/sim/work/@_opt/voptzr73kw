@@ -1,0 +1,40 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\SourceCode\FPGA\Onet\sim
+T_opt
+Z1 VLd`Foj?^HO^oN5@N39b<o1
+Z2 04 16 4 work tb_parall_interf fast 0
+Z3 =1-74d4355e1b46-5b94c2b1-178-1a40
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+Z5 n@_opt
+Z6 OE;O;6.5;42
+vparall_interf
+Z7 I7N5T?VcZnH?Q5;CQQOA3V1
+Z8 V<HdiZ@M9bGh9OOE7_m8VA0
+Z9 dF:\SourceCode\FPGA\ex_8\sim
+Z10 w1536471741
+Z11 8./../design/parall_interf.v
+Z12 F./../design/parall_interf.v
+L0 2
+Z13 OE;L;6.5;42
+r1
+31
+Z14 o-L mtiAvm -L mtiOvm -L mtiUPF
+Z15 !s100 670gzO?lA?R=Ug=BC:o4P2
+!s85 0
+vtb_parall_interf
+Z16 ImeWdIb1FQkAFDcdPIWXcE1
+Z17 Va^gBEX4DhFZQORFmFJ@g02
+R9
+Z18 w1536475802
+Z19 8./tb_parall_interf.v
+Z20 F./tb_parall_interf.v
+L0 2
+R13
+r1
+31
+R14
+Z21 !s100 0Z8Y8neZ<G5YkJmoW=bl?2
+!s85 0

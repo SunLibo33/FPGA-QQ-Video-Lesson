@@ -1,0 +1,15 @@
+module ex_ipcore(
+       input wire clk;
+		 output wire oclk1,
+		 output wire oclk2,
+		 output wire locked
+);
+
+pll1	pll1_inst (
+	.inclk0 ( clk ),
+	.c0 ( oclk1 ),
+	.c1 ( oclk2 ),
+	.locked ( locked )
+	);
+
+endmodule 

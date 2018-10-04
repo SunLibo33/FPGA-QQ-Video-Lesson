@@ -1,0 +1,35 @@
+m255
+K3
+13
+cModel Technology
+dC:\modeltech_6.5\examples
+vex_cnt
+V6]f7Q?Y0bzEX?CLm:f75J2
+r1
+!s85 0
+31
+IUNDXilS^cBCMj=bO3gZo^3
+Z0 dF:\SourceCode\FPGA\sim
+w1533349971
+8F:/SourceCode/FPGA/design/ex_cnt.v
+FF:/SourceCode/FPGA/design/ex_cnt.v
+L0 1
+Z1 OE;L;6.5;42
+Z2 o-work work -nocovercells -L mtiAvm -L mtiOvm -L mtiUPF
+Z3 !s102 -nocovercells
+!s100 WONMbfoM3?:^=7j[[XLd;2
+vtb_ex_cnt
+V3Se1F;GKKzBn=Y_iQXC0k2
+r1
+31
+IXed46LBGOnSD:Z`L3lZB92
+Z4 dF:\SourceCode\FPGA\sim
+w1533348400
+8F:/SourceCode/FPGA/sim/tb_ex_cnt.v
+FF:/SourceCode/FPGA/sim/tb_ex_cnt.v
+L0 3
+R1
+R3
+R2
+!s85 0
+!s100 ffV29MGk;N[cg2Qj_40PY0

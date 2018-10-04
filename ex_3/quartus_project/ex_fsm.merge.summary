@@ -1,0 +1,14 @@
+Partition Merge Status : Successful - Sun Aug 05 08:17:34 2018
+Quartus II 64-Bit Version : 12.0 Build 178 05/31/2012 SJ Full Version
+Revision Name : ex_fsm
+Top-level Entity Name : ex_fsm
+Family : Cyclone IV E
+Total logic elements : 455
+    Total combinational functions : 317
+    Dedicated logic registers : 335
+Total registers : 335
+Total pins : 5
+Total virtual pins : 0
+Total memory bits : 512
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

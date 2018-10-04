@@ -1,0 +1,72 @@
+module r_ctrl(
+       input  wire r_clk,
+       input  wire rst_n,
+       input  wire r_en,
+       
+       input wire [8:0]w_gaddr,
+     
+       output reg   r_empty,
+       output wire [7:0]r_addr,
+       output reg  [8:0]r_gaddr
+);
+
+reg [8:0]w_gaddr_1d;
+reg [8:0]w_gaddr_2d;
+
+reg [8:0]r_addr_bin_wire;
+reg [8:0]r_addr_bin;
+
+wire [8:0]r_gaddr_wire;
+
+
+
+always @(r_en or r_empty or r_addr_bin)
+begin
+ if((r_en==1'b1)&&(r_empty==1'b0))
+   r_addr_bin_wire=r_addr_bin+9'd1;
+ else
+   r_addr_bin_wire=r_addr_bin;
+end
+
+always @(posedge r_clk or negedge rst_n)
+begin
+	if(rst_n==1'b0)
+	  	r_addr_bin<=9'd0;
+	else 
+      r_addr_bin<=r_addr_bin_wire;
+end
+
+assign r_addr = r_addr_bin[7:0];
+
+assign r_gaddr_wire = {1'b0,r_addr_bin_wire[8:1]}^r_addr_bin_wire;
+always @(posedge r_clk or negedge rst_n)
+begin
+	if(rst_n==1'b0)
+	  	r_gaddr<=9'd0;
+	else
+      r_gaddr<=r_gaddr_wire;
+end
+
+always @(posedge r_clk or negedge rst_n)
+begin
+	if(rst_n==1'b0)
+	  begin
+	  	w_gaddr_1d<=9'd0;
+	    w_gaddr_2d<=9'd0;
+	  end
+	else
+	  begin
+	    w_gaddr_1d<=w_gaddr;
+	    w_gaddr_2d<=w_gaddr_1d;
+	  end
+end
+
+always @(posedge r_clk or negedge rst_n)
+begin
+	if(rst_n==1'b0)
+	  r_empty<=1'b1;
+	else
+	  r_empty<= (r_gaddr_wire==w_gaddr_2d);
+end
+
+endmodule
