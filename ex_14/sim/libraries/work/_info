@@ -1,0 +1,494 @@
+m255
+K4
+z2
+13
+cModel Technology
+Z0 dF:/SourceCode/FPGA-QQ-Video-Lesson/ex_14/sim
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+T_opt
+Z1 VlTVblKl:UV1Mc40Rbnb860
+Z2 04 13 4 work tb_ex_fir_lpf fast 0
+Z3 =1-74d4355e1b46-5bb805c2-29f-2070
+Z4 o-quiet -auto_acc_if_foreign -work work -L work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive +acc
+Z5 n@_opt
+Z6 OL;O;10.2c;57
+Z7 dF:/SourceCode/FPGA-QQ-Video-Lesson/ex_14/sim
+Z8 !s110 1538786755
+valtera_avalon_sc_fifo
+Z9 !s110 1538789284
+Z10 IcR^RXPV6ZNlfV3Nn]ZL]f1
+Z11 V`JN@9S9cnhjKRR_L]QIcM3
+R7
+Z12 w1538750421
+Z13 8./../quartus_project/ipcore_dir/fir_lpf/altera_avalon_sc_fifo.v
+Z14 F./../quartus_project/ipcore_dir/fir_lpf/altera_avalon_sc_fifo.v
+L0 21
+Z15 OL;L;10.2c;57
+r1
+31
+Z16 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z17 !s100 CQ5D2iz6Azz6>2l5h06?=2
+Z18 !s90 -reportprogress|300|./../quartus_project/ipcore_dir/fir_lpf/altera_avalon_sc_fifo.v|
+Z19 !s108 1538789284.938000
+Z20 !s107 ./../quartus_project/ipcore_dir/fir_lpf/altera_avalon_sc_fifo.v|
+!i10b 1
+!s85 0
+!i111 0
+Eauk_dspip_avalon_streaming_controller_hpfir
+R12
+Z21 DPx4 ieee 15 std_logic_arith 0 22 I`lKR?Ob>E^B_e2VdVLiQ0
+Z22 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
+Z23 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
+R7
+Z24 8./../quartus_project/ipcore_dir/fir_lpf/auk_dspip_avalon_streaming_controller_hpfir.vhd
+Z25 F./../quartus_project/ipcore_dir/fir_lpf/auk_dspip_avalon_streaming_controller_hpfir.vhd
+l0
+L41
+Z26 V0jNe:FE8NOe0h3DblE14Z2
+Z27 OL;C;10.2c;57
+32
+Z28 !s110 1538789285
+Z29 !s108 1538789285.686000
+Z30 !s90 -reportprogress|300|./../quartus_project/ipcore_dir/fir_lpf/auk_dspip_avalon_streaming_controller_hpfir.vhd|
+Z31 !s107 ./../quartus_project/ipcore_dir/fir_lpf/auk_dspip_avalon_streaming_controller_hpfir.vhd|
+Z32 tExplicit 1
+Z33 !s100 :Km6hF?2SIGhCI]CCRB8R3
+!i10b 1
+!i111 0
+Astruct
+R21
+R22
+R23
+Z34 DEx4 work 43 auk_dspip_avalon_streaming_controller_hpfir 0 22 0jNe:FE8NOe0h3DblE14Z2
+l72
+L64
+Z35 VjSM]X_2:5?`YlS]WEc89c2
+R27
+32
+R28
+R29
+R30
+R31
+R32
+Z36 !s100 d^`@P<cO?Ae3FI>HI]@mC0
+!i10b 1
+!i111 0
+Eauk_dspip_avalon_streaming_sink_hpfir
+R12
+Z37 DPx9 altera_mf 20 altera_mf_components 0 22 ?P7^MHQdQQEd]b`HMDRjd2
+Z38 DPx4 work 24 auk_dspip_math_pkg_hpfir 0 22 Ye`YJUD^Ek4^eICKho<6>0
+Z39 DPx4 work 23 auk_dspip_lib_pkg_hpfir 0 22 a<FikoazHjW2<E7VJnAMW2
+Z40 DPx4 ieee 11 numeric_std 0 22 WES[o8HS0jHV[MIXQk2Ha1
+R22
+R23
+R7
+Z41 8./../quartus_project/ipcore_dir/fir_lpf/auk_dspip_avalon_streaming_sink_hpfir.vhd
+Z42 F./../quartus_project/ipcore_dir/fir_lpf/auk_dspip_avalon_streaming_sink_hpfir.vhd
+l0
+L56
+Z43 V<PzdAW@DzcYgnX;<:Mc]?0
+R27
+32
+R28
+Z44 !s108 1538789285.954000
+Z45 !s90 -reportprogress|300|./../quartus_project/ipcore_dir/fir_lpf/auk_dspip_avalon_streaming_sink_hpfir.vhd|
+Z46 !s107 ./../quartus_project/ipcore_dir/fir_lpf/auk_dspip_avalon_streaming_sink_hpfir.vhd|
+R32
+Z47 !s100 X=?PHjSK;PSkCm[IYA^@02
+!i10b 1
+!i111 0
+Artl
+R37
+R38
+R39
+R40
+R22
+R23
+Z48 DEx4 work 37 auk_dspip_avalon_streaming_sink_hpfir 0 22 <PzdAW@DzcYgnX;<:Mc]?0
+l164
+L106
+Z49 V7C^bnkG`j@3M1iUPV;fCl0
+R27
+32
+R44
+R45
+R46
+R32
+Z50 !s110 1538789286
+Z51 !s100 d1`Vk5Z@a]Q=KDU3W=B]H3
+!i10b 1
+!i111 0
+Eauk_dspip_avalon_streaming_source_hpfir
+R12
+R38
+R37
+R40
+R22
+R23
+R7
+Z52 8./../quartus_project/ipcore_dir/fir_lpf/auk_dspip_avalon_streaming_source_hpfir.vhd
+Z53 F./../quartus_project/ipcore_dir/fir_lpf/auk_dspip_avalon_streaming_source_hpfir.vhd
+l0
+L70
+Z54 V;^g0[G6R[KKHB[?BZhFGi3
+R27
+32
+R50
+Z55 !s108 1538789286.223000
+Z56 !s90 -reportprogress|300|./../quartus_project/ipcore_dir/fir_lpf/auk_dspip_avalon_streaming_source_hpfir.vhd|
+Z57 !s107 ./../quartus_project/ipcore_dir/fir_lpf/auk_dspip_avalon_streaming_source_hpfir.vhd|
+R32
+Z58 !s100 z61=GE?nV4baRO4^14Czd2
+!i10b 1
+!i111 0
+Artl
+R38
+R37
+R40
+R22
+R23
+Z59 DEx4 work 39 auk_dspip_avalon_streaming_source_hpfir 0 22 ;^g0[G6R[KKHB[?BZhFGi3
+l190
+L109
+Z60 V?TI3^IRjionT@G^oRWzdk0
+R27
+32
+R50
+R55
+R56
+R57
+R32
+Z61 !s100 9Dmb32DBg2LcB];:ibk821
+!i10b 1
+!i111 0
+Pauk_dspip_lib_pkg_hpfir
+R38
+R40
+R22
+R23
+R12
+R7
+Z62 8./../quartus_project/ipcore_dir/fir_lpf/auk_dspip_lib_pkg_hpfir.vhd
+Z63 F./../quartus_project/ipcore_dir/fir_lpf/auk_dspip_lib_pkg_hpfir.vhd
+l0
+L22
+Z64 Va<FikoazHjW2<E7VJnAMW2
+R27
+32
+R28
+R32
+Z65 !s100 Q<H^mQVRzgBIk@CWQl<Xg2
+Z66 !s108 1538789285.392000
+Z67 !s90 -reportprogress|300|./../quartus_project/ipcore_dir/fir_lpf/auk_dspip_lib_pkg_hpfir.vhd|
+Z68 !s107 ./../quartus_project/ipcore_dir/fir_lpf/auk_dspip_lib_pkg_hpfir.vhd|
+!i10b 1
+!i111 0
+Pauk_dspip_math_pkg_hpfir
+R40
+R22
+R23
+R12
+R7
+Z69 8./../quartus_project/ipcore_dir/fir_lpf/auk_dspip_math_pkg_hpfir.vhd
+Z70 F./../quartus_project/ipcore_dir/fir_lpf/auk_dspip_math_pkg_hpfir.vhd
+l0
+L54
+Z71 VYe`YJUD^Ek4^eICKho<6>0
+R27
+32
+b1
+R28
+Z72 !s108 1538789285.149000
+Z73 !s90 -reportprogress|300|./../quartus_project/ipcore_dir/fir_lpf/auk_dspip_math_pkg_hpfir.vhd|
+Z74 !s107 ./../quartus_project/ipcore_dir/fir_lpf/auk_dspip_math_pkg_hpfir.vhd|
+R32
+Z75 !s100 GlH[CN>ISbN0k?204PBjF1
+!i10b 1
+!i111 0
+Bbody
+R38
+R40
+R22
+R23
+l0
+L131
+Z76 V]YK[HkQOT1eKnRbIGkU3?2
+R27
+32
+R28
+R72
+R73
+R74
+R32
+nbody
+Z77 !s100 e8T_@B_WY1l_0mWS7M2ER3
+!i10b 1
+!i111 0
+Eauk_dspip_roundsat_hpfir
+R12
+R40
+R22
+R23
+R7
+Z78 8./../quartus_project/ipcore_dir/fir_lpf/auk_dspip_roundsat_hpfir.vhd
+Z79 F./../quartus_project/ipcore_dir/fir_lpf/auk_dspip_roundsat_hpfir.vhd
+l0
+L39
+Z80 V0Y=C6g5=27MNG>RaA^I^93
+R27
+32
+R50
+Z81 !s108 1538789286.574000
+Z82 !s90 -reportprogress|300|./../quartus_project/ipcore_dir/fir_lpf/auk_dspip_roundsat_hpfir.vhd|
+Z83 !s107 ./../quartus_project/ipcore_dir/fir_lpf/auk_dspip_roundsat_hpfir.vhd|
+R32
+Z84 !s100 MTFVel;]g54IPMz7aW[f82
+!i10b 1
+!i111 0
+Abeh
+R40
+R22
+R23
+Z85 DEx4 work 24 auk_dspip_roundsat_hpfir 0 22 0Y=C6g5=27MNG>RaA^I^93
+l66
+L57
+Z86 VfSR_aE70IVTVToR;ag3OK1
+R27
+32
+R50
+R81
+R82
+R83
+R32
+Z87 !s100 P<CBf[n_IVB3WDF=>nNJg0
+!i10b 1
+!i111 0
+vdds_1M_10M
+Z88 !s110 1538789287
+Z89 !s100 [84Tzf@P>h9Pjzio6JZnF0
+Z90 Im<2>W]BIF:Tc[7:`C`D630
+R11
+R7
+Z91 w1538746405
+Z92 8./../design/dds_1M_10M.v
+Z93 F./../design/dds_1M_10M.v
+L0 1
+R15
+r1
+31
+Z94 !s108 1538789287.873000
+Z95 !s107 ./../design/top_fir_lpf.v|./../design/dds_1M_10M.v|
+Z96 !s90 -reportprogress|300|./../design/dds_1M_10M.v|./../design/top_fir_lpf.v|
+R16
+Z97 ndds_1@m_10@m
+!i10b 1
+!s85 0
+!i111 0
+vfir_lpf
+R9
+Z98 ImmCG>a007a`6SQVl4?BS;2
+R11
+R7
+Z99 w1538750446
+Z100 8./../quartus_project/ipcore_dir/fir_lpf.v
+Z101 F./../quartus_project/ipcore_dir/fir_lpf.v
+L0 8
+R15
+r1
+31
+Z102 !s108 1538789284.253000
+Z103 !s107 ./../quartus_project/ipcore_dir/sp_ram_256x8.v|./../quartus_project/ipcore_dir/fir_lpf.v|
+Z104 !s90 -reportprogress|300|./../quartus_project/ipcore_dir/fir_lpf.v|./../quartus_project/ipcore_dir/sp_ram_256x8.v|
+R16
+Z105 !s100 3UdnV:5@iAbX7A^;k6dRj1
+!i10b 1
+!s85 0
+!i111 0
+Efir_lpf_0002
+R12
+R22
+R23
+R7
+Z106 8./../quartus_project/ipcore_dir/fir_lpf/fir_lpf_0002.vhd
+Z107 F./../quartus_project/ipcore_dir/fir_lpf/fir_lpf_0002.vhd
+l0
+L4
+Z108 V[^P8hENLfi?JZfAhnzKd51
+R27
+32
+R88
+Z109 !s108 1538789287.290000
+Z110 !s90 -reportprogress|300|./../quartus_project/ipcore_dir/fir_lpf/fir_lpf_0002.vhd|
+Z111 !s107 ./../quartus_project/ipcore_dir/fir_lpf/fir_lpf_0002.vhd|
+R32
+Z112 !s100 b45z4IC[e`dLPU4lPFSzE0
+!i10b 1
+!i111 0
+Asyn
+R22
+R23
+Z113 DEx4 work 12 fir_lpf_0002 0 22 [^P8hENLfi?JZfAhnzKd51
+l44
+L21
+Z114 VCMdK=aEQ?o?AjiQ41A8@B0
+Z115 !s100 Qze9WYdRn??UYgYO]li7E1
+R27
+32
+R88
+R109
+R110
+R111
+R32
+!i10b 1
+!i111 0
+Efir_lpf_0002_ast
+R12
+R38
+R39
+R40
+R22
+R23
+R7
+Z116 8./../quartus_project/ipcore_dir/fir_lpf/fir_lpf_0002_ast.vhd
+Z117 F./../quartus_project/ipcore_dir/fir_lpf/fir_lpf_0002_ast.vhd
+l0
+L22
+Z118 Vm^HizVMg@;:0<815kZiE>1
+R27
+32
+R88
+Z119 !s108 1538789287.038000
+Z120 !s90 -reportprogress|300|./../quartus_project/ipcore_dir/fir_lpf/fir_lpf_0002_ast.vhd|
+Z121 !s107 ./../quartus_project/ipcore_dir/fir_lpf/fir_lpf_0002_ast.vhd|
+R32
+Z122 !s100 lld:ZgZb<E[9bRODEJ4eW2
+!i10b 1
+!i111 0
+Astruct
+R38
+R39
+R40
+R22
+R23
+Z123 DEx4 work 16 fir_lpf_0002_ast 0 22 m^HizVMg@;:0<815kZiE>1
+l115
+L68
+Z124 VT>^CzeP]o]mMNz8WC=_of2
+R27
+32
+R88
+R119
+R120
+R121
+R32
+Z125 !s100 @gKb`26Qdkg]PhfDK166>3
+!i10b 1
+!i111 0
+Efir_lpf_0002_rtl
+R12
+Z126 DPx3 lpm 14 lpm_components 0 22 GG;1jYIXJc@72jOeABI820
+R37
+Z127 DPx4 ieee 9 math_real 0 22 X1eFklFj<NHn@4Wz7P8j:2
+R40
+R22
+R23
+R7
+Z128 8./../quartus_project/ipcore_dir/fir_lpf/fir_lpf_0002_rtl.vhd
+Z129 F./../quartus_project/ipcore_dir/fir_lpf/fir_lpf_0002_rtl.vhd
+l0
+L34
+Z130 V?3<;gPjPE0:WPAd2A2in]1
+R27
+32
+R50
+Z131 !s108 1538789286.826000
+Z132 !s90 -reportprogress|300|./../quartus_project/ipcore_dir/fir_lpf/fir_lpf_0002_rtl.vhd|
+Z133 !s107 ./../quartus_project/ipcore_dir/fir_lpf/fir_lpf_0002_rtl.vhd|
+R32
+Z134 !s100 QZd^J2R6ALm[De9^TKU871
+!i10b 1
+!i111 0
+Anormal
+R126
+R37
+R127
+R40
+R22
+R23
+Z135 DEx4 work 16 fir_lpf_0002_rtl 0 22 ?3<;gPjPE0:WPAd2A2in]1
+l173
+L49
+Z136 V`R7Ln[<E7a:lGZS`9?DlX3
+R27
+32
+R50
+R131
+R132
+R133
+R32
+Z137 !s100 b>LJ6<:kWBFQ2Q3W]AjVf3
+!i10b 1
+!i111 0
+vsp_ram_256x8
+R9
+Z138 I0f_kN22Si3ERb@_EQU_]l0
+R11
+R7
+Z139 w1538535799
+Z140 8./../quartus_project/ipcore_dir/sp_ram_256x8.v
+Z141 F./../quartus_project/ipcore_dir/sp_ram_256x8.v
+L0 39
+R15
+r1
+31
+R102
+R103
+R104
+R16
+Z142 !s100 n2l2mZU93NgjgG2ACCX[Z3
+!i10b 1
+!s85 0
+!i111 0
+vtb_ex_fir_lpf
+!s110 1538789288
+!i10b 1
+Z143 !s100 H@5[^5eOmW3P6Q^1O[KZT3
+Z144 IT9SUC=M:]?eR2D4abT1gn1
+R11
+R7
+Z145 w1538751703
+Z146 8./tb_ex_fir_lpf.v
+Z147 F./tb_ex_fir_lpf.v
+L0 3
+R15
+r1
+!s85 0
+31
+!s108 1538789288.173000
+!s107 ./tb_ex_fir_lpf.v|
+Z148 !s90 -reportprogress|300|./tb_ex_fir_lpf.v|
+!i111 0
+R16
+vtop_fir_lpf
+R88
+Z149 !s100 @SkFK80PAj<DfETFIKk4V2
+Z150 I=1E3Sn6Fzao23j@WDm]mh0
+R11
+R7
+Z151 w1538786728
+Z152 8./../design/top_fir_lpf.v
+Z153 F./../design/top_fir_lpf.v
+L0 1
+R15
+r1
+31
+R94
+R95
+R96
+R16
+!i10b 1
+!s85 0
+!i111 0
