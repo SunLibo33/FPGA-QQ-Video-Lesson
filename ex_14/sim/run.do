@@ -3,8 +3,9 @@ quit -sim
 proc ensure_lib { lib } { if ![file isdirectory $lib] { vlib $lib } }
 ensure_lib      ./libraries/     
 ensure_lib      ./libraries/work/
-vmap       work ./libraries/work/
-if { ![ string match "*ModelSim ALTERA*" [ vsim -version ] ] } {
+vmap       work     ./libraries/work/
+vmap       work_lib ./libraries/work/
+if  ![ string match "*ModelSim ALTERA*" [ vsim -version ] ]  {
   ensure_lib                  ./libraries/altera_ver/      
   vmap       altera_ver       ./libraries/altera_ver/      
   ensure_lib                  ./libraries/lpm_ver/         
@@ -31,33 +32,34 @@ if { ![ string match "*ModelSim ALTERA*" [ vsim -version ] ] } {
   vmap       cycloneive       ./libraries/cycloneive/      
 }
 
-  if { ![ string match "*ModelSim ALTERA*" [ vsim -version ] ] } {
-    vlog     "C:/altera/12.0/quartus/eda/sim_lib/altera_primitives.v"              -work altera_ver      
-    vlog     "C:/altera/12.0/quartus/eda/sim_lib/220model.v"                       -work lpm_ver         
-    vlog     "C:/altera/12.0/quartus/eda/sim_lib/sgate.v"                          -work sgate_ver       
-    vlog     "C:/altera/12.0/quartus/eda/sim_lib/altera_mf.v"                      -work altera_mf_ver   
-#   vlog -sv "C:/altera/12.0/quartus/eda/sim_lib/mentor/altera_lnsim_for_vhdl.sv"  -work altera_lnsim_ver   
-    vlog     "C:/altera/12.0/quartus/eda/sim_lib/cycloneive_atoms.v"               -work cycloneive_ver  
-    vcom     "C:/altera/12.0/quartus/eda/sim_lib/altera_syn_attributes.vhd"        -work altera          
-    vcom     "C:/altera/12.0/quartus/eda/sim_lib/altera_standard_functions.vhd"    -work altera          
-    vcom     "C:/altera/12.0/quartus/eda/sim_lib/alt_dspbuilder_package.vhd"       -work altera          
-    vcom     "C:/altera/12.0/quartus/eda/sim_lib/altera_europa_support_lib.vhd"    -work altera          
-    vcom     "C:/altera/12.0/quartus/eda/sim_lib/altera_primitives_components.vhd" -work altera          
-    vcom     "C:/altera/12.0/quartus/eda/sim_lib/altera_primitives.vhd"            -work altera          
-    vcom     "C:/altera/12.0/quartus/eda/sim_lib/220pack.vhd"                      -work lpm             
-    vcom     "C:/altera/12.0/quartus/eda/sim_lib/220model.vhd"                     -work lpm             
-    vcom     "C:/altera/12.0/quartus/eda/sim_lib/sgate_pack.vhd"                   -work sgate           
-    vcom     "C:/altera/12.0/quartus/eda/sim_lib/sgate.vhd"                        -work sgate           
-    vcom     "C:/altera/12.0/quartus/eda/sim_lib/altera_mf_components.vhd"         -work altera_mf       
-    vcom     "C:/altera/12.0/quartus/eda/sim_lib/altera_mf.vhd"                    -work altera_mf       
-    vcom     "C:/altera/12.0/quartus/eda/sim_lib/altera_lnsim_components.vhd"      -work altera_lnsim    
-    vcom     "C:/altera/12.0/quartus/eda/sim_lib/cycloneive_atoms.vhd"             -work cycloneive      
-    vcom     "C:/altera/12.0/quartus/eda/sim_lib/cycloneive_components.vhd"        -work cycloneive      
+  if  ![ string match "*ModelSim ALTERA*" [ vsim -version ] ]  {
+    vlog     "C:/altera/14.1/quartus/eda/sim_lib/altera_primitives.v"              -work altera_ver      
+    vlog     "C:/altera/14.1/quartus/eda/sim_lib/220model.v"                       -work lpm_ver         
+    vlog     "C:/altera/14.1/quartus/eda/sim_lib/sgate.v"                          -work sgate_ver       
+    vlog     "C:/altera/14.1/quartus/eda/sim_lib/altera_mf.v"                      -work altera_mf_ver   
+    vlog -sv "C:/altera/14.1/quartus/eda/sim_lib/mentor/altera_lnsim_for_vhdl.sv"  -work altera_lnsim_ver  	
+    vlog     "C:/altera/14.1/quartus/eda/sim_lib/cycloneive_atoms.v"               -work cycloneive_ver  
+    vcom     "C:/altera/14.1/quartus/eda/sim_lib/altera_syn_attributes.vhd"        -work altera          
+    vcom     "C:/altera/14.1/quartus/eda/sim_lib/altera_standard_functions.vhd"    -work altera          
+    vcom     "C:/altera/14.1/quartus/eda/sim_lib/alt_dspbuilder_package.vhd"       -work altera          
+    vcom     "C:/altera/14.1/quartus/eda/sim_lib/altera_europa_support_lib.vhd"    -work altera          
+    vcom     "C:/altera/14.1/quartus/eda/sim_lib/altera_primitives_components.vhd" -work altera          
+    vcom     "C:/altera/14.1/quartus/eda/sim_lib/altera_primitives.vhd"            -work altera          
+    vcom     "C:/altera/14.1/quartus/eda/sim_lib/220pack.vhd"                      -work lpm             
+    vcom     "C:/altera/14.1/quartus/eda/sim_lib/220model.vhd"                     -work lpm             
+    vcom     "C:/altera/14.1/quartus/eda/sim_lib/sgate_pack.vhd"                   -work sgate           
+    vcom     "C:/altera/14.1/quartus/eda/sim_lib/sgate.vhd"                        -work sgate           
+    vcom     "C:/altera/14.1/quartus/eda/sim_lib/altera_mf_components.vhd"         -work altera_mf       
+    vcom     "C:/altera/14.1/quartus/eda/sim_lib/altera_mf.vhd"                    -work altera_mf       
+    vcom     "C:/altera/14.1/quartus/eda/sim_lib/altera_lnsim_components.vhd"      -work altera_lnsim    
+    vcom     "C:/altera/14.1/quartus/eda/sim_lib/cycloneive_atoms.vhd"             -work cycloneive      
+    vcom     "C:/altera/14.1/quartus/eda/sim_lib/cycloneive_components.vhd"        -work cycloneive      
   }
   
 vlog ./../quartus_project/ipcore_dir/*.v
 vlog ./../quartus_project/ipcore_dir/fir_lpf/*.v
-#vcom ./../quartus_project/ipcore_dir/fir_lpf/*.vhd #replaced by the following vlog and vcom tcl command
+#vcom ./../quartus_project/ipcore_dir/fir_lpf/*.vhd 
+#replaced by the following vlog and vcom tcl command
 vlog "./../quartus_project/ipcore_dir/fir_lpf/altera_avalon_sc_fifo.v"                        
 vcom "./../quartus_project/ipcore_dir/fir_lpf/auk_dspip_math_pkg_hpfir.vhd"                   
 vcom "./../quartus_project/ipcore_dir/fir_lpf/auk_dspip_lib_pkg_hpfir.vhd"                    

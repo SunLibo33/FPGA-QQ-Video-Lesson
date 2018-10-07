@@ -73,6 +73,7 @@ sgate = ./libraries/sgate/
 altera_mf = ./libraries/altera_mf/
 altera_lnsim = ./libraries/altera_lnsim/
 cycloneive = ./libraries/cycloneive/
+work_lib = ./libraries/work/
 [DefineOptionset]
 ; Define optionset entries for the various compilers, vmake, and vsim.
 ; These option sets can be used with the "-optionset <optionsetname>" syntax.
