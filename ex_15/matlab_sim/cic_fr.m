@@ -1,8 +1,8 @@
 clc;
 clear all;
-R=32;
+R=16;
 M=1;
-N=6;
+N=3;
 
 n=0:1:500-1;
 w=pi*n/(length(n));
@@ -13,4 +13,4 @@ ABS_H=abs(H);
 mag=20*log10(ABS_H/max(ABS_H));
 plot(w/pi,mag,'blue');
 grid on;
-axis([0,1,-280,0]);
+axis([0,1,-100,0]);

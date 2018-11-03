@@ -16,4 +16,12 @@ add wave tb_cic_top/cic_top_instance/*
 add wave tb_cic_top/cic_top_instance/cic_interpolate_instance/s_flag
 add wave tb_cic_top/cic_top_instance/cic_interpolate_instance/s_flag_i
 
-run 1000us
+add wave -format analog -height 100 -color pink   -max 127     -min -128      tb_cic_top/cic_top_instance/data_con
+add wave -format analog -height 100 -color green  -max 1048575 -min -1048576  tb_cic_top/cic_top_instance/data_out
+
+add wave -divider {cic_interpolate_instance}
+
+add wave tb_cic_top/cic_top_instance/cic_interpolate_instance/s_flag
+add wave tb_cic_top/cic_top_instance/cic_interpolate_instance/s_flag_i
+
+run 100us

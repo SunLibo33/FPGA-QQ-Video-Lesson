@@ -1,7 +1,7 @@
 module gen_sin(
        input wire        sclk,
        input wire        rst_n,
-       output wire [7:0] data_o,
+       output reg [7:0] data_o,
        output reg       data_v
 );
 
@@ -13,7 +13,13 @@ wire [7:0]  o_wave_1M;
 reg  [5:0]  div_cnt;
 reg         s_flag;
 
-assign data_o=o_wave_1M;
+always @(posedge sclk or negedge rst_n)
+begin
+	if(rst_n==1'b0)
+	  data_o<=8'sd0;
+	else if(s_flag==1'b1)
+    data_o<=o_wave_1M;
+end
 
 always @(posedge sclk or negedge rst_n)
 begin
