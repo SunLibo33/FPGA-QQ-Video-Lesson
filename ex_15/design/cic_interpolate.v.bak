@@ -1,0 +1,142 @@
+module cic_interpolate(
+			 input wire               sclk,    //50MHz
+			 input wire               rst_n,
+			 input wire signed[7:0]   data_in, //50/64 MSPS -->50/4 MSPS , Sin waveform
+			 input wire               data_v,
+			 output wire signed[22:0] data_out
+
+);
+
+parameter DIV_NUM=6'd63;
+parameter DIV_NUM_I=3'd3;
+
+reg signed[8:0] comb1;
+reg signed[9:0] comb2;
+reg signed[10:0]comb3;
+
+reg signed[14:0]integ1;
+reg signed[18:0]integ2;
+reg signed[22:0]integ3;
+
+wire signed[8:0] comb1_w;
+wire signed[9:0] comb2_w;
+wire signed[10:0]comb3_w;
+
+wire signed[14:0]integ1_w;
+wire signed[18:0]integ2_w;
+wire signed[22:0]integ3_w;
+
+
+
+reg [5:0]div_cnt;
+reg      s_flag;
+reg      s_flag_i;
+
+always @(posedge sclk or negedge rst_n)
+begin
+	if(rst_n==1'b0)
+	  s_flag<=1'b0;
+	else if(div_cnt==6'd0)
+	  s_flag<=1'b1;
+	else
+	  s_flag<=1'b0;
+end
+
+always @(posedge sclk or negedge rst_n)
+begin
+	if(rst_n==1'b0)
+	  s_flag_i<=1'b0;
+	else if(div_cnt[1:0]==2'b11)
+	  s_flag_i<=1'b1;
+	else
+	  s_flag_i<=1'b0;
+end
+
+always @(posedge sclk or negedge rst_n)
+begin
+	if(rst_n==1'b0)
+	  div_cnt<=6'd0;
+	else if(div_cnt==DIV_NUM)
+	  div_cnt<=6'd0; 
+	else
+	  div_cnt<=div_cnt+6'd1;
+end
+
+always @(posedge sclk or negedge rst_n)
+begin
+	if(rst_n==1'b0)
+	  comb1<=9'sd0;
+	else if( (data_v==1'b1) && (s_flag=1'b1) )
+	  comb1<={data_in[7],data_in};
+	else if (data_v==1'b0)
+	  comb1<=9'sd0;
+end
+
+assign comb1_w={data_in[7],data_in}-comb1;
+
+always @(posedge sclk or negedge rst_n)
+begin
+	if(rst_n==1'b0)
+	  comb2<=10'sd0;
+	else if( (data_v==1'b1) && (s_flag=1'b1) )
+	  comb2<={comb1_w[8],comb1_w};
+	else if (data_v==1'b0)
+	  comb2<=10'sd0;
+end
+
+assign comb2_w={comb1_w[8],comb1_w}-comb2;
+
+always @(posedge sclk or negedge rst_n)
+begin
+	if(rst_n==1'b0)
+	  comb3<=11'sd0;
+	else if( (data_v==1'b1) && (s_flag=1'b1) )
+	  comb3<={comb2_w[8],comb2_w};
+	else if (data_v==1'b0)
+	  comb3<=11'sd0;
+end
+
+assign comb3_w={comb2_w[9],comb2_w}-comb3;
+
+
+assign integ1_w={{4{comb3_w[10]}},comb3_w}+integ1;
+
+always @(posedge sclk or negedge rst_n)
+begin
+	if(rst_n==1'b0)
+	  integ1<=15'sd0;
+	else if( (data_v==1'b1) && (s_flag_i=1'b1) )
+	  integ1<=integ1_w;
+	else if (data_v==1'b0)
+	  integ1<=15'sd0;
+end
+
+assign integ2_w={{4{integ1_w[14]}},integ1_w}+integ2;
+
+always @(posedge sclk or negedge rst_n)
+begin
+	if(rst_n==1'b0)
+	  integ2<=19'sd0;
+	else if( (data_v==1'b1) && (s_flag_i=1'b1) )
+	  integ2<=integ2_w;
+	else if (data_v==1'b0)
+	  integ2<=19'sd0;
+end
+
+assign integ3_w={{4{integ2_w[18]}},integ2_w}+integ3;
+
+always @(posedge sclk or negedge rst_n)
+begin
+	if(rst_n==1'b0)
+	  integ3<=23'sd0;
+	else if( (data_v==1'b1) && (s_flag_i=1'b1) )
+	  integ3<=integ3_w;
+	else if (data_v==1'b0)
+	  integ3<=23'sd0;
+end
+
+
+
+assign data_out = integ3_w;
+
+endmodule 
